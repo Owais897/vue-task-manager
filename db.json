@@ -9,20 +9,32 @@
     {
       "text": "cd",
       "day": "dsvdfv",
-      "reminder": true,
+      "reminder": false,
       "id": 47
-    },
-    {
-      "text": "cd",
-      "day": "a",
-      "reminder": true,
-      "id": 48
     },
     {
       "text": "dsad",
       "day": "rfr",
-      "reminder": false,
+      "reminder": true,
       "id": 49
+    },
+    {
+      "text": "ed",
+      "day": "wedw",
+      "reminder": true,
+      "id": 50
+    },
+    {
+      "text": "wrer",
+      "day": "dsvdfv",
+      "reminder": false,
+      "id": 51
+    },
+    {
+      "text": "qqqqqqq",
+      "day": "qqqqq",
+      "reminder": true,
+      "id": 53
     }
   ]
 }

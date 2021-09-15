@@ -1,37 +1,38 @@
 <template>
-<div class="container">
-  <Header @toggle-add-task="toggleAddTask" :showAddTask="showAddTask" title="Task Tracker"></Header>
+  <div class="container">
+    <Header
+      @toggle-add-task="toggleAddTask"
+      :showAddTask="showAddTask"
+      title="Task Tracker"
+    ></Header>
 
-  <router-view :showAddTask="showAddTask">
-
-  </router-view>
-  <Footer/>
-</div>
+    <router-view :showAddTask="showAddTask"> </router-view>
+    <Footer />
+  </div>
 </template>
 
 <script>
-
-import Header from "./components/Header.vue"
-import Footer from "./components/Footer.vue"
+import Header from "./components/Header.vue";
+import Footer from "./components/Footer.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-  Header,
-Footer,
-  },
-  data(){
-    return {
-      showAddTask:false 
-    }
-  },
-  methods:{
-     toggleAddTask(){
-      this.showAddTask=!this.showAddTask 
-    },
+    Header,
+    Footer,
   },
 
-}
+  data() {
+    return {
+      showAddTask: false,
+    };
+  },
+  methods: {
+    toggleAddTask() {
+      this.showAddTask = !this.showAddTask;
+    },
+  },
+};
 </script>
 
 <style>
@@ -41,7 +42,7 @@ Footer,
   padding: 0;
 }
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 .container {
   max-width: 500px;
